@@ -13,19 +13,22 @@ http://stackoverflow.com/questions/5065357/how-to-generate-an-insert-script-for-
 Se puede encontrar tambien en :
 http://www.sqlservercentral.com/scripts/scripting/94260/
 
+
 PARAMETROS Y EJEMPLO:
 ---------------------
 
-DECLARE @BaseDeDatos='AdventureWorksDW2008R2'
+ @BaseDeDatos='AdventureWorksDW2008R2'
 
-DECLARE @Esquema    ='dbo'
+ @Esquema    ='dbo'
 
-DECLARE @Tabla      ='DimAccount'
+ @Tabla      ='DimAccount'
 
-DECLARE @Where      =' AND AccountCodeAlternateKey>1100 '
+ @Where      =' AND AccountCodeAlternateKey>1100 '
+ 
 
 NOTAS:
 ---------
+
 En caso de ser un campo char, varchar o similares:
 
     [' AND <campo>=''''<valor>'''' ']
