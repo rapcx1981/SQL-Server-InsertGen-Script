@@ -17,12 +17,23 @@ PARAMETROS Y EJEMPLO:
 ---------------------
 
 DECLARE @BaseDeDatos='AdventureWorksDW2008R2'
+
 DECLARE @Esquema    ='dbo'
+
 DECLARE @Tabla      ='DimAccount'
+
 DECLARE @Where      =' AND AccountCodeAlternateKey>1100 '
 
 NOTAS:
-------
--En caso de ser un campo char, varchar o similares	-->	[' AND <campo>=''''<valor>'''' ']
--En caso de ser un campo int, smallint o similares	-->	[' AND <campo>=<valor>			]
--En caso de ser un campo bit (donde <valor> = 0 | 1)-->	[' AND <campo>=<valor>			]
+---------
+En caso de ser un campo char, varchar o similares:
+
+    [' AND <campo>=''''<valor>'''' ']
+
+En caso de ser un campo int, smallint o similares:
+
+    [' AND <campo>=<valor>			]
+
+En caso de ser un campo bit (donde <valor> = 0 | 1):
+
+    [' AND <campo>=<valor>			]
